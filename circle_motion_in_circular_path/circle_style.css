@@ -1,30 +1,38 @@
+body {
+  background-color: darkkhaki;
+}
+
 .circle_line {
   position: relative;
   border-radius: 202px/202px;
-  border: solid 2px #f00;
+  border: solid 2px darkgreen;
   width: 202px;
   height: 202px;
   margin-left: 100px;
+  background-color: darkgreen
 }
 
 .rotating_circle {
     position: absolute;
-    border-radius: 5px/5px;
-    border: solid 2px black;
-    width: 1px;
-    height: 1px;
-    left: 200px;
-    top: 100px;
+    border-radius: 25px/25px;
+    border: solid 2px gray;
+    width: 25px;
+    height: 25px;
+    left: 185px;
+    top: 85px;
+    background-color: gray;
 }
 
 .start_button {
   position: relative;
   float: left;
   margin-top: 10px;
+  background-color: gray;
 }
 
 .end_button {
   position: relative;
   margin-top: 10px;
   margin-left: 10px;
+  background-color: gray;
 }
