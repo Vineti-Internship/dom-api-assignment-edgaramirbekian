@@ -37,6 +37,45 @@ window.onload = function () {
 
     button_container.appendChild(button);
 
-    
+     // run this function when clicking START button
+    button.onclick = function () {
+        // get element which will be used
+        const ELEM = document.getElementById("ball");
+
+        // set ball's primary coordinates
+        var x0 = 100;
+        var y0 = 100;
+
+        // set radius of path
+        const RADIUS = 100;
+
+        // set primary angle
+        var start_angle = 0;
+
+        //end function when reaching this angle
+        var end_angle = 11760;
+
+        //run function everi 5 ms
+        var my_interval = setInterval (move_ball, 5);
+        function move_ball () { 
+            // when reach end_angle end interval 
+            if (start_angle == end_angle) {
+                clearInterval (my_insterval);
+            }
+            else {
+                // add 1 radian to primary angle every time function is called
+                start_angle += 1;
+
+                // add new coordinates according these mathematical calculations
+                var x = x0 + RADIUS * Math.cos(start_angle * Math.PI/180);
+                var y = y0 - RADIUS * Math.sin(start_angle * Math.PI/180);
+
+                // assign new coordinates to element with id 'ball'
+                ELEM.style.left = x +'px';
+                ELEM.style.top = y + 'px';
+            }
+        }    
+    }
+
 
 }
