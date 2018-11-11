@@ -54,8 +54,8 @@ window.onload = function () {
         const ELEM = document.getElementById("ball");
 
         // set ball's primary coordinates
-        var x0 = 100;
-        var y0 = 100;
+        var x0 = 85;
+        var y0 = 85;
 
         // set radius of path
         const RADIUS = 100;
