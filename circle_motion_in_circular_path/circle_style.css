@@ -22,3 +22,9 @@
   float: left;
   margin-top: 10px;
 }
+
+.end_button {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+}
